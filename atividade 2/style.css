@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f5f0eb; 
+    color: #4a4238; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.ponto {
+    background-color: #faf6f0; 
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(74, 66, 56, 0.12);
+    max-width: 480px;
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #e6dec8; 
+}
+
+.topo {
+    background-color: #8c7a6b; 
+    color: #ffffff;
+    padding: 16px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.corpo {
+    padding: 20px;
+}
+
+.bloco {
+    margin-bottom: 18px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 14px;
+    border: 1px solid #e8e0d5;
+}
+
+.titulo {
+    font-size: 14px;
+    color: #6b5c4d;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Container do Vídeo */
+.video-box {
+    width: 100%;
+    height: 220px;
+    background-color: #2b2520;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#foto {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #e3d9cd;
+}
+
+/* Indicadores de Geolocalização */
+.dados {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.caixa {
+    flex: 1;
+    background-color: #f7f3ed;
+    border: 1px solid #e3d9cd;
+    border-radius: 6px;
+    padding: 10px;
+    text-align: center;
+}
+
+.label {
+    display: block;
+    font-size: 11px;
+    color: #8c7b6c;
+    margin-bottom: 4px;
+}
+
+.valor {
+    font-size: 12px;
+    font-weight: bold;
+    color: #5c4f43;
+    word-break: break-all;
+}
+
+/* Mensagem de Erro */
+#erro p {
+    color: #b33939;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+/* Botão de Registro */
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #8c7a6b;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn:hover {
+    background-color: #756456;
+}
+
+.btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}

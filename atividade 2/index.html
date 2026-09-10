@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teams - Registro de Ponto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--"Desenvolvimento do módulo de Registro de Ponto via Microsoft Teams, integrado com captura de imagem via câmera e validação de geolocalização por GPS para controle presencial de jornada."-->
+    <div class="ponto">
+        <div class="topo">
+            Microsoft Teams - Registro de Ponto
+        </div>
+
+        <div class="corpo">
+            
+            <div class="bloco">
+                <div class="titulo">Câmera</div>
+                <div class="video-box">
+                    <video id="camera" autoplay></video>
+                    <audio id="audio" autoplay></audio>
+                    <canvas id="canvas" style="display: none;"></canvas>
+                </div>
+                <img id="foto" alt="Foto capturada" style="display: none;">
+            </div>
+
+            
+            <div id="sucesso" class="bloco" style="display: none;">
+                <p>A sua localização foi obtida!</p>
+                <div class="dados">
+                    <div class="caixa">
+                        <strong class="label">Latitude</strong>
+                        <data id="latitude" class="valor"></data>
+                    </div>
+                    <div class="caixa">
+                        <strong class="label">Longitude</strong>
+                        <data id="longitude" class="valor"></data>
+                    </div>
+                    <div class="caixa">
+                        <strong class="label">Precisão</strong>
+                        <data id="precisao" class="valor"></data>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div id="erro" class="bloco" style="display: none;">
+                <p>Não foi possível obter a localização. Por favor, autorize a permissão de GPS no seu navegador para continuar.</p>
+            </div>
+
+            
+            <button id="btn-registrar" class="btn" disabled>Registrar Ponto</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
